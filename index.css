@@ -1,0 +1,115 @@
+div.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+div.navbar ul li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+
+div.navbar ul li:last-child {
+    border-right: none;
+}
+
+div.navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+div.navbar li a:hover {
+	background-color: #111;
+}
+
+h1 {
+	text-align: center;
+}
+
+.szoveg {
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.peldaszoveg p {
+	text-align: justify;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 1.8;
+}
+
+.inverted {
+	filter: invert(100%);
+}
+
+div.kepek {
+    border: 1px solid #ccc;
+}
+
+div.kepek:hover {
+    border: 1px solid #777;
+}
+
+div.kepek img {
+    width: 100%;
+    height: auto;
+}
+
+div.kepleir {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+	.responsive {
+		width: 49.99999%;
+		margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+    }
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.comment {
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+}
+
+.hiba {
+	color: red;
+}
+
+.egykomment {
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: #FFF;
+}
+
+.egykomment:hover {
+	background-color: #EEE;
+}

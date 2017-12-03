@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Varga Dániel</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="jquery-3.2.1.min.js"></script>
+<script src="index.js"></script>
+</head>
+<body onload="LoadReady()">
+	<!-- Navigációs szál !-->
+	<div class="navbar">
+		<ul>
+			<li><a id="navH" href="#home">A lap teteje</a></li>
+			<li><a id="navR" href="#renders">Renderek</a></li>
+			<li><a id="navA" href="#about">Rólam</a></li>
+			<li><a id="navC" href="#contact">Elérhetőség</a></li>
+		</ul>
+	</div>
+
+	<div class="szoveg">
+		<h1 id="home">Blenderes tapasztalataim</h1>
+
+		<div class="peldaszoveg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				Vivamus tempor in odio at placerat. Proin maximus, elit ut lobortis
+				tempor, libero dui feugiat tortor, id vulputate mi metus vel arcu.
+				Proin feugiat auctor ipsum, in hendrerit nibh gravida et. Vestibulum
+				vel neque a urna consectetur feugiat. Mauris malesuada ligula nec ex
+				congue maximus. Phasellus nulla orci, ornare nec leo non, ultricies
+				sollicitudin erat. Etiam nec turpis odio. Pellentesque consequat,
+				massa nec tincidunt mollis, urna nisi fermentum quam, at sagittis
+				metus velit id nunc. Aliquam pulvinar tristique accumsan. Nulla
+				vulputate sem eget efficitur auctor.</p>
+		</div>
+
+		<h1 id="renders">Néhány renderem</h1>
+
+		<div class="responsive">
+			<div class="kepek">
+				<a target="_blank" href="keszrender/doughnuts_final.png"> <img
+					src="keszrender/doughnuts_final.png" width="600" height="400"
+					alt="">
+				</a>
+				<div class="kepleir">A legelső renderem, ilyenkor csak nagyon
+					alap dolgokkal próbálkoztam.</div>
+			</div>
+		</div>
+
+		<div class="responsive">
+			<div class="kepek">
+				<a target="_blank" href="keszrender/earth_render_final.png"> <img
+					src="keszrender/earth_render_final.png" width="600" height="400"
+					alt="">
+				</a>
+				<div class="kepleir">A második renderem, itt jobban
+					megismerkedtem a renderelés folyamatával magával és az utólagos
+					képszerkesztéssel. A tényleges "modell" maga 4 gömb, három a Föld,
+					egy a nap. A csinosító effektusok nagy része utólag lett a képhez
+					adva.</div>
+			</div>
+		</div>
+
+		<div class="responsive">
+			<div class="kepek">
+				<a target="_blank" href="keszrender/meadow_render_final.png"> <img
+					src="keszrender/meadow_render_final.png" width="600" height="400"
+					alt="">
+				</a>
+				<div class="kepleir">A legutóbbi renderem, itt szabadabb
+					voltam, mint a másik kettőnél. A vékony köddel sok bajom volt, 7
+					órára fel is vitte a renderelés idejét, de sajnos végül alig
+					látszott, és még hagyott is egy csúnya fehér csíkot a fa közepében.
+					(Ha rákattintasz a képre, megnézheted nagyobb felbontásban is, és
+					ott tisztán látható.)</div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+		<h1 id="about">Rólam</h1>
+
+		<div class="peldaszoveg"><p>Mauris ullamcorper fermentum efficitur. In hac habitasse platea dictumst. Integer ultrices purus eget rhoncus semper. In eu quam et ante efficitur eleifend eget quis mauris. Cras sed massa vel est tristique scelerisque. Sed sed imperdiet dolor. Nam dictum quis enim id consectetur. Ut ut nunc sit amet massa semper egestas. Sed ultricies, diam nec lobortis fringilla, orci massa commodo ligula, eu gravida tellus nibh vel ligula. Quisque vel dictum justo. Mauris accumsan erat id sapien imperdiet, eu viverra nunc aliquam. Maecenas ultricies erat non tellus eleifend pretium. Suspendisse malesuada, turpis sed mollis condimentum, metus mi lacinia erat, mattis tempus erat sapien ac nibh.</p></div>
+
+		<h1 id="contact">Elérhetőség</h1>
+
+		<div class="peldaszoveg">
+			<p>Hagyj egy üzenetet!</p>
+		</div>
+
+		<div class="comment">
+			<form action="" name="komment" onsubmit="return ValidateForm()">
+				<fieldset name="fs">
+					<legend>Megjegyzés beküldése</legend>
+					<p>
+						Név:
+					</p>
+					<input name="nev" id="nev" type="text" size="30" required="required" onkeyup="checkName()" placeholder="Aladar"> <div class="hiba" id="nhiba">A névbe csak az angol ABC betűi szerepeljenek, és nagybetűvel kell, hogy kezdődjön!</div>
+					<p>
+						Email:
+					</p>
+					<input name="email" id="email" type="text" size="30" required="required" onkeyup="checkEmail()" placeholder="valami@pelda.com"> <div class="hiba" id="mhiba">Egy email formátuma ilyen kell, hogy legyen: xxx@xxx.xxx</div>
+					<p>
+						Üzenet:
+					</p>
+					<textarea name="uzenet" cols="" rows="4" required="required" placeholder="Ide írd az üzeneted!"></textarea>
+					<p>
+						<input type="submit">
+					</p>
+				</fieldset>
+			</form>
+		</div>
+		
+		<div id="kommentek">
+			<h2>Mások megjegyzései:</h2>
+		</div>
+
+	</div>
+</body>
+</html>
